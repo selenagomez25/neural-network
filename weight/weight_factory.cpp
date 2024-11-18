@@ -5,7 +5,6 @@ weight_factory::weight_factory( std::vector<std::vector<double>>& weights_matrix
 	const int& rows,
 	const int& columns )
 {
-	// resize the weight matrix to fit the rows and columns
     weights_matrix.resize( rows, std::vector<double>( columns ) );
 
     std::default_random_engine generator {};

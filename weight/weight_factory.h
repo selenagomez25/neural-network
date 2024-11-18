@@ -1,8 +1,6 @@
 #pragma once
 #include "weight.cpp"
 
-
-//  The weight factory class is responsible for initializing the neccessary weights of our Neural Network
 class weight_factory
 {
 

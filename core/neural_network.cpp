@@ -13,7 +13,6 @@ neural_network::neural_network( nodes& node, const double& learning_rate )
 	this->m_node = node;
 	this->m_learning_rate = learning_rate;
 	
-	// initialize the weights
 	const weight_factory _( m_weight_inputs_hidden, node.hidden, node.input );
 	const weight_factory __( m_weight_outputs_hidden, node.output, node.hidden );
 }
@@ -66,6 +65,5 @@ std::vector<double> neural_network::predict( const std::vector<double>& inputs )
 		outputs[i] = math_util::sigmoid( final_inputs[i] );
 	}
 
-	// return the final outputs when done
 	return outputs;
 }

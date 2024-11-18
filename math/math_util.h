@@ -6,7 +6,6 @@
 class math_util
 {
 private:
-	// Uninitializable constructor.
 	math_util( );
 public:
 
